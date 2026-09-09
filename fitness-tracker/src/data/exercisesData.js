@@ -1,0 +1,107 @@
+// Sample exercise data used throughout the application.
+// Each exercise includes everything needed for cards, detail pages,
+// filtering, and the workout planner/log.
+export const exercisesData = [
+  // ---------------- STRENGTH (8) ----------------
+  { id: 1, name: 'Push-ups', category: 'strength', muscleGroups: ['chest', 'triceps', 'shoulders'], difficulty: 'beginner', duration: 10, sets: 3, reps: 15,
+    image: '/assets/images/pushups.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Start in a plank position with hands shoulder-width apart', 'Lower your body until chest nearly touches the floor', 'Push back up to starting position', 'Keep core engaged throughout'],
+    equipment: 'none', caloriesBurn: 50 },
+  { id: 2, name: 'Bodyweight Squats', category: 'strength', muscleGroups: ['legs', 'core'], difficulty: 'beginner', duration: 10, sets: 3, reps: 20,
+    image: '/assets/images/squats.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand with feet shoulder-width apart', 'Lower hips back and down as if sitting in a chair', 'Keep chest up and knees behind toes', 'Push through heels to stand back up'],
+    equipment: 'none', caloriesBurn: 60 },
+  { id: 3, name: 'Dumbbell Bench Press', category: 'strength', muscleGroups: ['chest', 'shoulders', 'arms'], difficulty: 'intermediate', duration: 15, sets: 4, reps: 10,
+    image: '/assets/images/bench-press.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Lie on a bench holding a dumbbell in each hand', 'Press weights up until arms are extended', 'Lower slowly back to chest level', 'Keep wrists straight throughout'],
+    equipment: 'dumbbells', caloriesBurn: 90 },
+  { id: 4, name: 'Pull-ups', category: 'strength', muscleGroups: ['back', 'arms'], difficulty: 'advanced', duration: 10, sets: 4, reps: 8,
+    image: '/assets/images/pullups.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Grip the bar slightly wider than shoulder-width', 'Pull your body up until chin clears the bar', 'Lower with control to full extension', 'Avoid swinging for momentum'],
+    equipment: 'pull-up bar', caloriesBurn: 80 },
+  { id: 5, name: 'Deadlifts', category: 'strength', muscleGroups: ['back', 'legs', 'core'], difficulty: 'advanced', duration: 20, sets: 4, reps: 6,
+    image: '/assets/images/deadlifts.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand with feet hip-width apart, barbell over midfoot', 'Hinge at hips and grip the bar', 'Drive through heels, keeping back flat, to stand', 'Lower the bar with control back to the floor'],
+    equipment: 'barbell', caloriesBurn: 120 },
+  { id: 6, name: 'Dumbbell Rows', category: 'strength', muscleGroups: ['back', 'arms'], difficulty: 'intermediate', duration: 12, sets: 3, reps: 12,
+    image: '/assets/images/rows.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Place one knee and hand on a bench for support', 'Hold a dumbbell in the opposite hand, arm extended', 'Pull the dumbbell up towards your hip', 'Lower with control and repeat'],
+    equipment: 'dumbbells', caloriesBurn: 70 },
+  { id: 7, name: 'Plank', category: 'strength', muscleGroups: ['core'], difficulty: 'beginner', duration: 5, sets: 3, reps: 1,
+    image: '/assets/images/plank.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Rest on forearms and toes, body in a straight line', 'Engage your core and glutes', 'Hold the position for 30-60 seconds', 'Avoid letting hips sag or pike up'],
+    equipment: 'none', caloriesBurn: 30 },
+  { id: 8, name: 'Lunges', category: 'strength', muscleGroups: ['legs', 'core'], difficulty: 'intermediate', duration: 12, sets: 3, reps: 12,
+    image: '/assets/images/lunges.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Step forward with one leg and lower hips', 'Keep front knee above the ankle', 'Push back to starting position', 'Alternate legs each rep'],
+    equipment: 'none', caloriesBurn: 65 },
+
+  // ---------------- CARDIO (6) ----------------
+  { id: 9, name: 'Jumping Jacks', category: 'cardio', muscleGroups: ['legs', 'shoulders', 'core'], difficulty: 'beginner', duration: 10, sets: 3, reps: 30,
+    image: '/assets/images/jumping-jacks.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Start standing with feet together, arms at sides', 'Jump feet out while raising arms overhead', 'Jump back to starting position', 'Repeat at a steady pace'],
+    equipment: 'none', caloriesBurn: 100 },
+  { id: 10, name: 'High Knees', category: 'cardio', muscleGroups: ['legs', 'core'], difficulty: 'beginner', duration: 8, sets: 3, reps: 40,
+    image: '/assets/images/high-knees.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand tall and jog in place', 'Drive knees up towards chest', 'Pump arms for momentum', 'Keep a quick, steady pace'],
+    equipment: 'none', caloriesBurn: 90 },
+  { id: 11, name: 'Burpees', category: 'cardio', muscleGroups: ['legs', 'chest', 'core'], difficulty: 'advanced', duration: 12, sets: 4, reps: 15,
+    image: '/assets/images/burpees.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Start standing, drop into a squat and place hands down', 'Kick feet back into a plank', 'Return feet to squat position', 'Explode upward into a jump'],
+    equipment: 'none', caloriesBurn: 140 },
+  { id: 12, name: 'Mountain Climbers', category: 'cardio', muscleGroups: ['core', 'shoulders', 'legs'], difficulty: 'intermediate', duration: 10, sets: 3, reps: 30,
+    image: '/assets/images/mountain-climbers.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Start in a plank position', 'Drive one knee toward your chest', 'Quickly switch legs in a running motion', 'Keep hips low and core tight'],
+    equipment: 'none', caloriesBurn: 110 },
+  { id: 13, name: 'Jump Rope', category: 'cardio', muscleGroups: ['legs', 'shoulders'], difficulty: 'beginner', duration: 10, sets: 3, reps: 60,
+    image: '/assets/images/jump-rope.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Hold rope handles at hip height', 'Rotate wrists to swing rope overhead', 'Jump just high enough to clear the rope', 'Land softly on the balls of your feet'],
+    equipment: 'jump rope', caloriesBurn: 120 },
+  { id: 14, name: 'Sprint Intervals', category: 'cardio', muscleGroups: ['legs', 'core'], difficulty: 'advanced', duration: 15, sets: 6, reps: 1,
+    image: '/assets/images/sprints.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Sprint at maximum effort for 30 seconds', 'Walk or jog to recover for 60 seconds', 'Repeat for the prescribed number of rounds', 'Warm up thoroughly beforehand'],
+    equipment: 'none', caloriesBurn: 160 },
+
+  // ---------------- FLEXIBILITY (4) ----------------
+  { id: 15, name: 'Standing Hamstring Stretch', category: 'flexibility', muscleGroups: ['legs'], difficulty: 'beginner', duration: 5, sets: 2, reps: 1,
+    image: '/assets/images/hamstring-stretch.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand tall and extend one leg forward, heel down', 'Hinge at the hips and reach toward your toes', 'Hold for 20-30 seconds', 'Switch legs and repeat'],
+    equipment: 'none', caloriesBurn: 15 },
+  { id: 16, name: 'Cat-Cow Stretch', category: 'flexibility', muscleGroups: ['back', 'core'], difficulty: 'beginner', duration: 5, sets: 2, reps: 10,
+    image: '/assets/images/cat-cow.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Start on hands and knees in a tabletop position', 'Arch your back and look up (cow)', 'Round your spine and tuck your chin (cat)', 'Flow slowly between the two positions'],
+    equipment: 'mat', caloriesBurn: 10 },
+  { id: 17, name: 'Shoulder Stretch', category: 'flexibility', muscleGroups: ['shoulders'], difficulty: 'beginner', duration: 5, sets: 2, reps: 1,
+    image: '/assets/images/shoulder-stretch.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Bring one arm across your chest', 'Use the opposite arm to gently pull it closer', 'Hold for 20-30 seconds', 'Switch arms and repeat'],
+    equipment: 'none', caloriesBurn: 8 },
+  { id: 18, name: 'Hip Flexor Stretch', category: 'flexibility', muscleGroups: ['legs', 'core'], difficulty: 'intermediate', duration: 6, sets: 2, reps: 1,
+    image: '/assets/images/hip-flexor.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Kneel on one knee in a lunge position', 'Shift weight forward to feel a stretch in the hip', 'Keep torso upright', 'Hold 20-30 seconds and switch sides'],
+    equipment: 'mat', caloriesBurn: 12 },
+
+  // ---------------- BALANCE (3) ----------------
+  { id: 19, name: 'Single-Leg Stand', category: 'balance', muscleGroups: ['legs', 'core'], difficulty: 'beginner', duration: 5, sets: 3, reps: 1,
+    image: '/assets/images/single-leg.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand tall and shift weight onto one foot', 'Lift the other foot slightly off the ground', 'Hold for 20-30 seconds while keeping core tight', 'Switch legs and repeat'],
+    equipment: 'none', caloriesBurn: 15 },
+  { id: 20, name: 'Tree Pose', category: 'balance', muscleGroups: ['legs', 'core'], difficulty: 'intermediate', duration: 6, sets: 2, reps: 1,
+    image: '/assets/images/tree-pose.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand tall and place one foot on the inner opposite thigh', 'Bring hands together at chest or overhead', 'Focus on a fixed point to maintain balance', 'Hold, then switch sides'],
+    equipment: 'mat', caloriesBurn: 20 },
+  { id: 21, name: 'Bosu Ball Squats', category: 'balance', muscleGroups: ['legs', 'core'], difficulty: 'advanced', duration: 10, sets: 3, reps: 12,
+    image: '/assets/images/bosu-squats.jpg', videoUrl: '/assets/videos/exercise-demo.mp4',
+    instructions: ['Stand on the flat side of a Bosu ball', 'Perform a squat while maintaining balance', 'Keep core engaged throughout', 'Use a wall for support if needed'],
+    equipment: 'bosu ball', caloriesBurn: 75 },
+];
+
+// Motivational audio tracks featured on the Home page
+export const audioTracks = [
+  { id: 1, title: 'Morning Motivation', description: 'A quick pump-up track to start your workout right.', audioUrl: '/assets/audio/motivation-track.mp3' },
+  { id: 2, title: 'Push Through', description: 'Keep going when it gets tough.', audioUrl: '/assets/audio/motivation-track.mp3' },
+];
+
+// The seven days used to build the weekly workout planner state
+export const daysOfWeek = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+
+export default exercisesData;

@@ -1,0 +1,37 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.heroAudio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.statCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #007bff;
+}
+.notFound {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .page { padding: 1rem; }
+}

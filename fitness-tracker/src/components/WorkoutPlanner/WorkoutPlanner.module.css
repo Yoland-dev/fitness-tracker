@@ -1,0 +1,39 @@
+.plannerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.dayCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 160px;
+}
+.dayTitle {
+  margin: 0 0 0.5rem 0;
+  text-transform: capitalize;
+}
+.exerciseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f1f3f5;
+  font-size: 0.9rem;
+}
+.removeBtn {
+  border: none;
+  background: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-weight: 700;
+}
+.emptyDay {
+  color: #adb5bd;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .plannerGrid { grid-template-columns: 1fr; }
+}
